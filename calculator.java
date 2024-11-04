@@ -1,51 +1,26 @@
 import java.util.Scanner;
-
 public class calculator {
-    public static float add(float ar[], float b) {
-
-        int j;
+    public static float add(float a, float b) {
         float c;
-        for(j=0;j<b;j++)
-        {
-            ar[j]=ar[j]+0;
-            c=ar[j];
-        }
+        c=a+b;
         return c;
     }
 
     public static float sub(float a, float b) {
-
-        int j;
         float c;
-        for(j=0;j<b,j++)
-        {
-            ar[j]=ar[j]-0;
-            c=ar[j];
-        }
+        c=a-b;
         return c;
     }
 
     public static float mul(float a, float b) {
-
-        int j;
         float c;
-        for(j=0;j<b,j++)
-        {
-            ar[j]=ar[j]*1;
-            c=ar[j];
-        }
+        c=a*b;
         return c;
     }
 
     public static float div(float a, float b) {
-
-        int j;
         float c;
-        for(j=0;j<b,j++)
-        {
-`           ar[j]=ar[j]+0;
-            c=ar[j];
-        }
+        c=a/b;
         return c;
     }
 
@@ -59,31 +34,31 @@ public class calculator {
         System.out.println("4 for Divide ");
         System.out.print("Enter Your Choice : ");
         int ch = s.nextInt();
-        float n;
-        System.out.print("Enter the total numbers where you want to calculate it : " );
-        n=s.nextInt();
-        float[n] a;
+        System.out.print("Enter the value of x : " );
+        float x=s.nextInt();
+        System.out.print("Enter the value of y : " );
+        float y=s.nextInt();
         float result;
 
         switch (ch) {
             case 1:
-                result = add(a[], n);
-                System.out.println(result);
+                result = add(x,y);
+                System.out.println("The Sum of Two Numbers : " + result);
                 break;
             case 2:
-                result = sub(a[], n);
-                System.out.println(result);
+                result = sub(x,y);
+                System.out.println("The of Subtraction Two Numbers : " + result);
                 break;
             case 3:
-                result = mul(a[], n);
-                System.out.println(result);
+                result = mul(x,y);
+                System.out.println("The Multiplication of Two Numbers : " + result);
                 break;
             case 4:
-                result = div(a[], n);
-                System.out.println(result);
+                result = div(x,y);
+                System.out.println("The Division of Two Numbers : " + result);
                 break;
             default:
                 System.out.println("Invalid Choice.....");
         }
     }
-}                                                                                  
+}                                                                                
